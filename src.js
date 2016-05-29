@@ -1,9 +1,7 @@
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
   var a   = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   var arr = str.split('');
-  var off = 13;
-  var tmp = '';
-  var rlLtr, rlOff;
+  var off = 13, tmp = '', rlLtr, rlOff;
   
   for(var i in arr){
     rlOff = a.indexOf(arr[i]);
@@ -12,6 +10,3 @@ function rot13(str) { // LBH QVQ VG!
   }
   return tmp;
 }
-
-// Change the inputs below to test
-console.log(rot13("SERR YBIR?"));
